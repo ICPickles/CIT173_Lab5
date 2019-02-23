@@ -1,0 +1,205 @@
+    1  mkdir CIT173_Lab4
+    2  ls /dev
+    3  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    4  cat ~/CIT173_Lab4/my-dev-nodes.txt 
+    5  head -c1024 /dev/random
+    6  head -c1024 /dev/random > ~/CIT173_Lab4/mymodules-1.txt
+    7  cat ~/CIT173_Lab4/mymodules-1.txt 
+    8  lsmod
+    9  lsmod > ~/CIT173_Lab4/mymodules-1.txt 
+   10  uname -a
+   11  lsmod
+   12  modinfo nfs
+   13  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+   14  insmod nfs
+   15  modprobe nfs
+   16  sudo modprobe nfs
+   17  exit
+   18  history
+   19  lsmod
+   20  lsmod > ~/CIT173_Lab4/mymodules-2.txt
+   21  sudo rmmod nfs
+   22  lsmod
+   23  lsmod > ~/CIT173_Lab4/mymodules-3.txt
+   24  root -i
+   25  sudo -i
+   26  whoami
+   27  sudo -i
+   28  ls -l/dev > ~/CIT173_Lab4/my-newdev-nodes.txt
+   29  ls -l /dev > ~/CIT173_Lab4/my-newdev-nodes.txt
+   30  mkfs -t ext4 /dev/sda1
+   31  sudo -i
+   32  ls /dev
+   33  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt 
+   34  sudo -i
+   35  pwd
+   36  cd /mount
+   37  mount man
+   38  man mount
+   39  sudo -i
+   40  mount > ~/CIT173_Lab4/my-mounts.txt
+   41  df
+   42  df > ~/CIT173_Lab4/my-disk-usage.txt
+   43  umount /mnt/data
+   44  sudo -i
+   45  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+   46  pwd
+   47  cd ~/CIT173_Lab4
+   48  git init
+   49  git remote add origin https://github.com/ICPICKLES/CIT173_Lab4.git
+   50  git add --all
+   51  git commit -m "Lab assignment 4"
+   52  git push origin master
+   53  history
+   54  whoami
+   55  mkdir CIT173_Lab5
+   56  ls -l etc/fstab
+   57  ls -l /etc/fstab
+   58  ls /etc/fstab
+   59  cat /etc/fstab
+   60  df /etc/fstab
+   61  df
+   62  /etc/fstab
+   63  sudo /etc/fstab
+   64  sudo-i
+   65  sudo -i
+   66  df
+   67  mount
+   68  blkid
+   69  sudo mount
+   70  du
+   71  df
+   72  more /etc/fstab
+   73  mount -o auto /dev/sdb1 /mnt/data
+   74  sudo mount -o auto /dev/sdb1 /mnt/data
+   75  RTArocks1
+   76  sudo -i
+   77  mount
+   78  df /mnt/backup
+   79  df /mnt/data
+   80  df /mnt
+   81  df
+   82  ls /mnt
+   83  ls -ls /mnt
+   84  ls -l /mnt
+   85  ls /dev
+   86  du /dev/sdb
+   87  du /dev
+   88  cat /dev
+   89  ls /mnt
+   90  ls /mnt/backup
+   91  df
+   92  more /etc/fstab
+   93  ls /etc/fstab
+   94  ls -l /etc/fstab
+   95  /etc/fstab |less
+   96  sudo /etc/fstab | less
+   97  /etc/fstab
+   98  sudo -i
+   99  sudo umount -a
+  100  df
+  101  fdisk -l
+  102  sudo -i
+  103  ps
+  104  ps /
+  105  ls /proc
+  106  ps -a
+  107  ls /proc/1680
+  108  ls /proc/1680/status
+  109  cat /proc/1680
+  110  cat /proc/1690/status
+  111  cat /proc
+  112  ls /proc
+  113  ls -l /proc
+  114  vi /etc/fstab
+  115  jobs
+  116  fg
+  117  man jobs
+  118  fg
+  119  sudo -i
+  120  sudo gedit /etc/fstab
+  121  env
+  122  sudo -i
+  123  sudo -E gedit /etc/fstab
+  124  whoami
+  125  sudo -i
+  126  sudo -E gedit /etc/fstab
+  127  cat /etc/fstab
+  128  mount -l
+  129  cp /etc/fstab ~/CIT173_Lab5/my-fstab.txt
+  130  ls- l ~/CIT173_Lab5/my-fstab.txt 
+  131  ls -l ~/CIT173_Lab5/my-fstab.txt 
+  132  cat ~/CIT173_Lab5/my-fstab.txt 
+  133  ls
+  134  dd if=/dev/random of=data_file1.dat
+  135  rm data_file1.dat 
+  136  dd if=/dev/random of=data_file1.dat bs=1k count=1
+  137  rm data_file1.dat 
+  138  dd if=/dev/random of=data_file1.dat bs=1K count=10
+  139  cat data_file1.dat
+  140  ls data_file1.dat
+  141  ls-l data_file1.dat
+  142  ls -l data_file1.dat 
+  143  cp data_file1.dat /mnt/data
+  144  sudo cp data_file1.dat /mnt/data
+  145  cat /mount/data
+  146  mount -l
+  147  dd if=/dev/random of=data_file2.dat bs=1K count=10
+  148  cp data_file2.dat /mnt/data
+  149  sudo cp data_file2.dat /mnt/data
+  150  dd if=/dev/random of=backup_file2.dat bs=1K count=10
+  151  sudo cp backup_file1.dat /mnt/data
+  152  sudo cp backup_file2.dat /mnt/data
+  153  dd if=/dev/random of=backup_file1.dat bs=1K count=10
+  154  sudo cp backup_file1.dat /mnt/backup
+  155  sudo cp backup_file2.dat /mnt/backup
+  156  cp backup_file1.dat backup_file2.dat data_file1.dat data_file2.dat ~/CIT173_Lab5
+  157  ls ~/CIT173_Lab5
+  158  df
+  159  df> ~/CIT173_Lab5/my-disk-space.txt
+  160  uname -a
+  161  /proc/cpuinfo
+  162  sudo /proc/cpuinfo
+  163  lscpu
+  164  free -g
+  165  free-a
+  166  cat /proc/meminfo | grep MemTotal
+  167  ulimit -a
+  168  cat /proc/*/smaps
+  169  cat /proc/*/smaps | grep stack
+  170  sudo cat /proc/*/smaps | grep stack
+  171  clear
+  172  free -a
+  173  free -b
+  174  cat/procfs
+  175  cat /procfs
+  176  cat /proc | grep cpu
+  177  cat /proc
+  178  ls -l /proc
+  179  cat /proc/loadavg
+  180  history
+  181  uptime
+  182  cat /proc/loadavg
+  183  top
+  184  cat /proc/uptime
+  185  cat /proc/bash
+  186  ps -ef /proc
+  187  ls /proc
+  188  cat /proc/stat
+  189  cat /proc/status
+  190  cd /proc
+  191  cat stat
+  192  cd /
+  193  cd home
+  194  cd 
+  195  ls /proc
+  196  cat /proc/fs
+  197  ls /proc/fs
+  198  ls /proc/fb
+  199  ulimit -s
+  200  cat /proc/8192
+  201  cat /proc/8192/*
+  202  man ulimit
+  203  jobs
+  204  history>~/CIT173_Lab5/my-history4me.txt > ~/CIT173_Lab5
+  205  history>~/CIT173_Lab5/my-history4me.txt

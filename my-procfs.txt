@@ -1,0 +1,73 @@
+
+System Info
+Linux localhost.localdomain 4.18.16-300.fc29.x86_64 #1 SMP Sat Oct 20 23:24:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+uname -a
+
+CPU stats
+[ICPickles@localhost ~]$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              1
+On-line CPU(s) list: 0
+Thread(s) per core:  1
+Core(s) per socket:  1
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               142
+Model name:          Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+Stepping:            9
+CPU MHz:             2903.998
+BogoMIPS:            5807.99
+Hypervisor vendor:   VMware
+Virtualization type: full
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            4096K
+
+
+Total memory
+[ICPickles@localhost ~]$ cat /proc/meminfo | grep MemTotal
+MemTotal:        2016276 kB
+
+Stack size in bash
+
+-r--r--r--.  1 root      root                    0 Feb 21 01:00 loadavg
+Time Running and CPU load avg
+[ICPickles@localhost ~]$ uptime
+ 15:00:28 up  1:45,  1 user,  load average: 0.19, 0.33, 0.16<--15mins for CPU
+^time running^
+[ICPickles@localhost ~]$ cat /proc/loadavg
+0.21 0.26 0.16 2/439 2728   0.16<---- 15 mins
+[ICPickles@localhost ~]$ cat /proc/uptime
+7406.66 7200.60
+
+
+Involuntary switches
+voluntary_ctxt_switches:	2555
+nonvoluntary_ctxt_switches:	417
+
+There is one frame buffer currently, to a computer 0 means 1 to humans
+mode "800x600"
+    geometry 800 600 1176 885 32
+    timings 0 0 0 0 0 0 0
+    rgba 8/16,8/8,8/0,0/0
+endmode
+
+ulimit -S -a limit
+stack size              (kbytes, -s) 8192
+
+
+
+
+
+
+
+
+
+
+
+

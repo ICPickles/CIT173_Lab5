@@ -1,0 +1,12 @@
+ls /sys/class/leds/
+input1::capslock  input1::numlock  input1::scrolllock
+[ICPickles@localhost ~]$ ls '/sys/class/leds/input1::capslock'
+brightness  device  max_brightness  power  subsystem  trigger  uevent
+[ICPickles@localhost ~]$ cat '/sys/class/leds/input1::capslock/brightness'
+0
+[ICPickles@localhost ~]$ echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+[sudo] password for ICPickles: 
+1
+[ICPickles@localhost ~]$ echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+0
+
